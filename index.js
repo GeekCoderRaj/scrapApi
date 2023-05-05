@@ -2,6 +2,7 @@ const express =  require("express")
 const app = express();
 const request = require('request');
 const cheerio = require('cheerio');
+const cors = require("cors");
 const port = 5000 || process.env.PORT;
 app.use(cors);
 // const scrap = (error,response,html) => {
