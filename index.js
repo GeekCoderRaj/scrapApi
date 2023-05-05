@@ -3,6 +3,7 @@ const app = express();
 const request = require('request');
 const cheerio = require('cheerio');
 const port = 5000 || process.env.PORT;
+app.use(cors);
 // const scrap = (error,response,html) => {
 //     if(!error && response.statusCode == 200){
 //         const $ = cheerio.load(html);
